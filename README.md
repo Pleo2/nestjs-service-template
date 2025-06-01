@@ -19,14 +19,6 @@
   <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Dockerized 🐳_-blue.svg" alt="docker"/></a>
 </p>
 
-## 👀 Motivation
-
-When we start creating some new service based on NestJS most often we just use the Nest cli for starting a new service that already give us some convention and structure for our project. This is a good starting point however I was missing a couple of interesting things that almost all services should have to be ready to deploy to production like fully dockerized, ensuring coding conventions...
-
-For this reason I created this custom template for new services based on this framework, with everything I would like to have to start developing a service with the best practices but with a simple file structure so later developers can change to implement their logic.
-
-Here we are not providing any specific architecture like hexagonal architecture or others, this is like a simple template where later we can customize and create the architecture we need.
-
 ## 🌟 What is including this template?
 
 1. 🐳 Fully dockerized service ready for development and production environments with the best practices for docker, trying to provide a performance and small image just with the code we really need in your environments.
@@ -34,11 +26,11 @@ Here we are not providing any specific architecture like hexagonal architecture 
 3. ⚡️ Use [Fastify](https://fastify.dev/) as Web Framework. By default, [NestJS is using Express](https://docs.nestjs.com/techniques/performance) because is the most widely-used framework for working with NodeJS, however, this does not imply is the one is going to give us the most performance. Also, NestJS is fully compatible with Fastify, so we are providing this integration by default. You can check [here](https://github.com/fastify/benchmarks#benchmarks) comparison between different web frameworks [comparativa de express](https://betterstack.com/community/guides/scaling-nodejs/fastify-express/).
 
 4. 🐶 Integration with [husky](https://typicode.github.io/husky/) to ensure we have good quality and conventions while we are developing like:
-   - 💅 Running the linter over the files that have been changed
-   - 💬 Use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to ensure our commits have a convention.
-   - ✅ Run the tests automatically.
-   - ⚙️ Check our project does not have type errors with Typescript.
-   - 🙊 Check typos to ensure we don't have grammar mistakes.
+    - 💅 Running the linter over the files that have been changed
+    - 💬 Use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to ensure our commits have a convention.
+    - ✅ Run the tests automatically.
+    - ⚙️ Check our project does not have type errors with Typescript.
+    - 🙊 Check typos to ensure we don't have grammar mistakes.
 5. 🗂️ Separate tests over production code. By default, NestJS is combining in the same folder, the `src`, the unit tests and the code we are developing for production. This is something I personally don't like so here I am separating this and having a dedicated folder for the unit tests.
 6. 🧪 Testing with [Vitest](https://vitest.dev/) and [supertest](https://github.com/ladjs/supertest) for unit and e2e tests.
 7. 🏎️ Performance testing using [k6](https://grafana.com/oss/k6/).
@@ -47,14 +39,7 @@ Here we are not providing any specific architecture like hexagonal architecture 
 10. 🚀 CI/CD using GitHub Actions, helping ensure a good quality of our code and providing useful insights about dependencies, security vulnerabilities and others.
 11. 🐦‍🔥 Usage of ESModules instead of CommonJS, which is the standard in JavaScript.
 12. 📦 Use of [pnpm](https://pnpm.io/) as package manager, which is faster and more efficient than npm or yarn.
-
-## 🤩 Other templates
-
-Are you thinking in start new projects in other frameworks or create a super fancy library? If you like this template there are others base on this you can check:
-
-- [Template for new Typescript Libraries](https://github.com/AlbertHernandez/typescript-library-template)
-- [Template for new Typescript Express Services](https://github.com/AlbertHernandez/express-typescript-service-template)
-- [Template for new GitHub Actions based on NodeJS](https://github.com/AlbertHernandez/github-action-nodejs-template)
+13. 🔑 Environment variable validation with [Joi](https://github.com/hapijs/joi). How does it work in your code? In app.module.ts, you import ConfigModule.forRoot and pass your Joi validationSchema. When the app starts, NestJS validates the environment variables using that schema. If any required variable is missing or there is an invalid value, the app will not start and will show you an error.
 
 ## 🧑‍💻 Developing
 
@@ -82,17 +67,17 @@ Now, you should be able to start debugging configuring using your IDE. For examp
 
 ```json
 {
-  "version": "0.1.0",
-  "configurations": [
-    {
-      "type": "node",
-      "request": "attach",
-      "name": "Attach to docker",
-      "restart": true,
-      "port": 9229,
-      "remoteRoot": "/app"
-    }
-  ]
+	"version": "0.1.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "attach",
+			"name": "Attach to docker",
+			"restart": true,
+			"port": 9229,
+			"remoteRoot": "/app"
+		}
+	]
 }
 ```
 

@@ -1,79 +1,79 @@
 💻 Source:
-  - changed-files:
-      - any-glob-to-any-file:
-          - src/**
+    - changed-files:
+          - any-glob-to-any-file:
+                - src/**
 
 🧪 Tests:
-  - changed-files:
-      - any-glob-to-any-file:
-          - tests/**
-          - .env.test
-          - scripts/calculate-global-test-coverage.ts
-          - vitest.config.**.ts
-          - create-vitest-test-config.ts
-          - .nycrc.json
+    - changed-files:
+          - any-glob-to-any-file:
+                - tests/**
+                - .env.test
+                - scripts/calculate-global-test-coverage.ts
+                - vitest.config.**.ts
+                - create-vitest-test-config.ts
+                - .nycrc.json
 
 📝 Documentation:
-  - changed-files:
-      - any-glob-to-any-file:
-          - docs/**
-          - README.md
-          - images/**
+    - changed-files:
+          - any-glob-to-any-file:
+                - docs/**
+                - README.md
+                - images/**
 
 🐳 Build:
-  - changed-files:
-      - any-glob-to-any-file:
-          - .dockerignore
-          - Dockerfile
-          - docker-compose.yml
-          - .nvmrc
-          - .swcrc
-          - tsconfig.json
-          - tsconfig.prod.json
+    - changed-files:
+          - any-glob-to-any-file:
+                - .dockerignore
+                - Dockerfile
+                - docker-compose.yml
+                - .nvmrc
+                - .swcrc
+                - tsconfig.json
+                - tsconfig.prod.json
 
 ⚙️ Configuration:
-  - changed-files:
-      - any-glob-to-any-file:
-          - .dockerignore
-          - .editorconfig
-          - .env.example
-          - .eslintignore
-          - .eslintrc
-          - .gitignore
-          - .npmignore
-          - .npmrc
-          - .nvmrc
-          - .prettierignore
-          - .swcrc
-          - .yamllint.yml
-          - lint-staged.config.mjs
-          - vitest.config.**.ts
-          - create-vitest-test-config.ts
-          - commitlint.config.ts
-          - nest-cli.json
-          - .nycrc.json
-          - prettier.config.mjs
-          - tsconfig.json
-          - tsconfig.prod.json
+    - changed-files:
+          - any-glob-to-any-file:
+                - .dockerignore
+                - .editorconfig
+                - .env.example
+                - .eslintignore
+                - .eslintrc
+                - .gitignore
+                - .npmignore
+                - .npmrc
+                - .nvmrc
+                - .prettierignore
+                - .swcrc
+                - .yamllint.yml
+                - lint-staged.config.mjs
+                - vitest.config.**.ts
+                - create-vitest-test-config.ts
+                - commitlint.config.ts
+                - nest-cli.json
+                - .nycrc.json
+                - prettier.config.mjs
+                - tsconfig.json
+                - tsconfig.prod.json
 
 📦 Dependencies:
-  - changed-files:
-      - any-glob-to-any-file:
-          - package.json
-          - pnpm-lock.yaml
+    - changed-files:
+          - any-glob-to-any-file:
+                - package.json
+                - pnpm-lock.yaml
 
 🚀 CI/CD:
-  - changed-files:
-      - any-glob-to-any-file:
-          - .github/workflows/**
-          - .github/dependabot.yml
-          - .github/pr-scope-labeler.yml
-          - .husky/**
+    - changed-files:
+          - any-glob-to-any-file:
+                - .github/workflows/**
+                - .github/dependabot.yml
+                - .github/pr-scope-labeler.yml
+                - .husky/**
 
 🏠 Github Configuration:
-  - changed-files:
-      - any-glob-to-any-file:
-          - .github/ISSUE_TEMPLATE/**
-          - .github/CODEOWNERS
-          - .github/labels.yml
-          - .github/PULL_REQUEST_TEMPLATE.md
+    - changed-files:
+          - any-glob-to-any-file:
+                - .github/ISSUE_TEMPLATE/**
+                - .github/CODEOWNERS
+                - .github/labels.yml
+                - .github/PULL_REQUEST_TEMPLATE.md
